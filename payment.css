@@ -1,15 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
+  width: 100vw; /* 100% of the viewport width */
+  height: 100vh; /* 100% of the viewport height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+section {
+  padding: 10px;
+  width: 100vw;
+  height: 70vh;
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+.logo img {
+  max-width: 80%;
+  height: auto;
+}
+
+nav a {
+  padding: 0 20px;
+  font-size: 20px;
+  color: var(--black);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.login_button {
+  width: 100px;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: rgb(9, 69, 70);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  padding-top: 0px;
+}
+.login_button:hover {
+  background-color: rgb(9, 69, 70);
+  color: #fff;
+}
+header {
+  background-color: rgb(9, 69, 70);
+  color: #fff;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding-left: 130px;
+  padding-right: 130px;
+  margin-bottom: 30px;
 }
+
 .title {
   display: flex;
   flex-direction: row;
@@ -17,15 +75,31 @@ body {
   align-items: center;
   color: rgb(9, 69, 70);
 }
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
   transition: 0.3s;
   color: rgb(9, 69, 70);
-  width: 30%;
+  width: 100%;
+  height: 70%;
   padding: 10px;
   border-radius: 5px;
   background: #fff;
-  margin: 0px 4px;
+  margin: 0px 20px;
   border-color: rgb(9, 69, 70);
   box-shadow: 0 4px 8px rgba(9, 69, 70, 0.25); /* This adds a shadow */
 }
@@ -107,7 +181,7 @@ body {
 .best-deal {
   position: absolute;
   width: 50%;
-  top: 0px; /* Adjust as needed */
+  top: -33px; /* Adjust as needed */
   left: 0;
   right: 0;
   background-color: gold;
@@ -120,8 +194,8 @@ body {
 }
 .recommended-deal {
   position: absolute;
-  width: 50%;
-  top: 0px; /* Adjust as needed */
+  width: 70%;
+  top: -33px; /* Adjust as needed */
   left: 0;
   right: 0;
   background-color: greenyellow;
@@ -131,4 +205,68 @@ body {
   padding: 5px 0;
   font-weight: bold;
   z-index: 10; /* Ensure it's above other content */
+}
+
+.footer {
+  display: flex;
+  background-color: rgb(9, 69, 70);
+  color: #f7f9f9;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* @keyframes pop-in {
+    0% { opacity: 0; transform: scale(0.1); }
+    100% { opacity: 1; transform: scale(1); }
+} */
+
+.footerp1,
+.footerp3 {
+  display: inline-block;
+  vertical-align: middle;
+  height: 50px;
+}
+
+.footerp1 {
+  width: 50%;
+  text-align: center;
+  padding-bottom: 0 auto;
+  margin-top: 20px;
+}
+
+.footerp3 {
+  width: 50%;
+  text-align: right;
+  padding-left: 100px;
+  /* justify-content: space-between; */
+}
+
+.icon-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px;
+  background-color: rgb(14, 160, 160);
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 30px; /* Adjust the height as needed */
+  width: 30px; /* Adjust the width as needed */
+  margin-right: 20px; /* Adjust the margin as needed */
+  padding-left: 20px;
+  color: white;
+}
+
+.flex-icon-footer {
+  display: flex;
+  gap: 10px; /* Adjust the gap as needed */
+  margin-right: 200px;
+  margin-top: 5px;
+  justify-content: flex-end; /* Align icons to the right */
+  align-items: center; /* Align icons vertically in the center */
+  color: white;
 }

@@ -6,65 +6,127 @@
     <link rel="stylesheet" href="payment.css" />
     <title>Select a Plan</title>
   </head>
+
   <body>
-    <div class="title"><h1>Select the plan that’s right for you</h1></div>
-    <div class="container">
-      <div class="card" id="introductory">
-        <h2>Basic</h2>
-        <p class="price">10 EGP</p>
-        <!-- List of features -->
-        <ul>
-          <li>Access to 1 Exam</li>
-          <li class="save">save 0 EGP</li>
-          <!-- Add more list items for each feature -->
-        </ul>
-        <button>Get it</button>
+    <header>
+      <div class="logo1">
+        <img src="media/headerlogo.png" />
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="https://www.gammal.tech/" target="_blank">About</a>
+        <a href="login/login.html">
+          <button class="login_button">log in</button>
+        </a>
+      </nav>
+    </header>
+    <section class="hero-section">
+      <div class="title"><h1>Select the plan that’s right for you</h1></div>
+      <div class="container">
+        <div class="card" id="introductory">
+          <h2>Basic</h2>
+          <p class="price">10 EGP</p>
+          <!-- List of features -->
+          <ul>
+            <li>Access to 1 Exam</li>
+            <li class="save">save 0 EGP</li>
+            <!-- Add more list items for each feature -->
+          </ul>
+          <button>Get it</button>
+        </div>
+
+        <div class="card" id="personal">
+          <h2>Economy</h2>
+          <p class="price">
+            <span>40EGP-</span>
+            <span class="original-price">-50EGP</span>
+          </p>
+          <!-- List of features -->
+          <ul>
+            <li>Access to 5 Exam</li>
+            <li class="save">save 10 EGP</li>
+            <!-- Add more list items for each feature -->
+          </ul>
+          <button>Get it</button>
+        </div>
+
+        <div class="card" id="professional">
+          <div class="recommended-deal">BEST SELLING</div>
+          <h2>Gold</h2>
+          <p class="price">
+            <span>100EGP-</span> <span class="original-price">150EGP</span>
+          </p>
+          <!-- List of features -->
+          <ul>
+            <li>Access to 15 Exam</li>
+            <li class="save">save 50 EGP</li>
+            <!-- Add more list items for each feature -->
+          </ul>
+          <button>Get it</button>
+        </div>
+        <div class="card" id="king">
+          <div class="best-deal">BEST DEAL</div>
+          <h2>Premium</h2>
+          <p class="price">
+            <span>125EGP-</span> <span class="original-price">200EGP</span>
+          </p>
+          <!-- List of features -->
+          <ul>
+            <li>Access to 20 Exams</li>
+            <li class="save">save 75 EGP</li>
+            <!-- Add more list items for each feature -->
+          </ul>
+          <button>Get it</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footerp1">
+        <p>&copy; 2024 Gammal Tech</p>
       </div>
 
-      <div class="card" id="personal">
-        <h2>Economy</h2>
-        <p class="price">
-          <span>40EGP-</span>
-          <span class="original-price">50EGP</span>
-        </p>
-        <!-- List of features -->
-        <ul>
-          <li>Access to 5 Exam</li>
-          <li class="save">save 10 EGP</li>
-          <!-- Add more list items for each feature -->
-        </ul>
-        <button>Get it</button>
-      </div>
+      <div class="footerp3">
+        <div class="mediabar">
+          <div class="flex-icon-footer">
+            <div class="icon-border">
+              <a href="https://www.facebook.com/gammal.tech/">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
 
-      <div class="card" id="professional">
-        <div class="recommended-deal">BEST SELLING</div>
-        <h2>Gold</h2>
-        <p class="price">
-          <span>100EGP-</span> <span class="original-price">150EGP</span>
-        </p>
-        <!-- List of features -->
-        <ul>
-          <li>Access to 15 Exam</li>
-          <li class="save">save 50 EGP</li>
-          <!-- Add more list items for each feature -->
-        </ul>
-        <button>Get it</button>
+            <div class="icon-border">
+              <a href="https://twitter.com/gammaltech">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </div>
+
+            <div class="icon-border">
+              <a href="https://www.youtube.com/c/GammalTech">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+
+            <div class="icon-border">
+              <a href="https://www.instagram.com/gammal.tech">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+
+            <div class="icon-border">
+              <a href="https://www.linkedin.com/company/gammal-tech">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+
+            <div class="icon-border">
+              <a href="https://www.tiktok.com/@gammal.tech">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card" id="king">
-        <div class="best-deal">BEST DEAL</div>
-        <h2>Premium</h2>
-        <p class="price">
-          <span>125EGP-</span> <span class="original-price">200EGP</span>
-        </p>
-        <!-- List of features -->
-        <ul>
-          <li>Access to 20 Exams</li>
-          <li class="save">save 75 EGP</li>
-          <!-- Add more list items for each feature -->
-        </ul>
-        <button>Get it</button>
-      </div>
-    </div>
+    </footer>
 
     <script src="payment.js"></script>
   </body>
