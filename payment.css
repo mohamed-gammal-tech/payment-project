@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: rgb(9, 69, 70);
+}
+.card {
+  position: relative;
+  transition: 0.3s;
+  color: rgb(9, 69, 70);
+  width: 30%;
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff;
+  margin: 0px 4px;
+  border-color: rgb(9, 69, 70);
+  box-shadow: 0 4px 8px rgba(9, 69, 70, 0.25); /* This adds a shadow */
+}
+.card:hover {
+  box-shadow: 0 8px 18px 0 rgba(9, 69, 70, 0.5);
+  color: #fff;
+  background-color: rgb(9, 69, 70);
+  border: 1px solid #fff;
+}
+.card:hover h2 {
+  color: #fff;
+}
+.card:hover .price {
+  color: #fff;
+}
+.card:hover button {
+  background-color: #66b2b2;
+  color: #fff;
+}
+
+.card h2 {
+  color: rgb(9, 69, 70);
+  text-align: center;
+}
+
+.price {
+  color: rgb(9, 69, 70);
+  font-size: 24px;
+  text-align: center;
+}
+.original-price {
+  text-decoration: line-through;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.card ul li {
+  padding: 10px 0;
+}
+.card .save {
+  background: #ff7166;
+  color: white;
+  padding: 2px;
+  width: 100%;
+  font-size: 13px;
+  margin-top: 3px;
+  border-radius: 10px;
+}
+
+.card button {
+  background-color: #fff;
+  color: rgb(9, 69, 70);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 20px auto 0;
+  cursor: pointer;
+  border: 1px solid rgb(9, 69, 70);
+  transition: 0.3s;
+}
+
+.card button:hover {
+  color: rgb(9, 69, 70);
+  background-color: #fff;
+  border: 1px solid rgb(9, 69, 70);
+}
+.card {
+  position: relative;
+  /* Rest of your styles for card */
+}
+
+.best-deal {
+  position: absolute;
+  width: 50%;
+  top: 0px; /* Adjust as needed */
+  left: 0;
+  right: 0;
+  background-color: gold;
+  border-radius: 5px 5px 0px 0px;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  font-weight: bold;
+  z-index: 10; /* Ensure it's above other content */
+}
+.recommended-deal {
+  position: absolute;
+  width: 50%;
+  top: 0px; /* Adjust as needed */
+  left: 0;
+  right: 0;
+  background-color: greenyellow;
+  border-radius: 5px 5px 0px 0px;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  font-weight: bold;
+  z-index: 10; /* Ensure it's above other content */
+}
